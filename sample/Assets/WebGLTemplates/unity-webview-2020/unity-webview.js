@@ -12,7 +12,7 @@ var unityWebView =
         var clonedTop = parseInt($last.css('top')) - 100;
         var $clone = $last.clone().insertAfter($last).css('top', clonedTop + '%');
         var $iframe =
-            $('<iframe style="position:relative; width:100%; height100%; border-style:none; display:none; pointer-events:auto;"></iframe>')
+            $('<iframe style="position:relative; width:100%; height100%; border-style:none; display:none; pointer-events:auto;" allowFullScreen></iframe>')
             //$('<iframe style="position:relative; width:100%; height100%; border-style:none; src="https://www.youtube.com/embed/dQw4w9WgXcQ"; pointer-events:auto;"></iframe>')
 
             .attr('id', 'webview_' + name)
